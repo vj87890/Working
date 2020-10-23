@@ -60,7 +60,7 @@ def register():
 def login():
     form = LoginForm()
     if form.validate_on_submit():
-        email = form.email.data
+        Email = form.email.data
         password = form.password.data
         try:
             if auth.sign_in_with_email_and_password(email, password):
